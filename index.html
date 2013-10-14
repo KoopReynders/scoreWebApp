@@ -18,25 +18,35 @@
             </ol>
         </nav>
 
-        <section>
-        	Hier komt de data per "pagina"
+        <section id="home">
+            <h1 data-bind="title"></h1>
+            <p data-bind="description"></p>
+            <span data-bind="team"></span> - Win: <span data-bind="Win"></span> Lost: <span data-bind="Lost"></span>
+        </section>
+        
+        <section id="schedule">
+            <header>Schedule</header>
         </section>
 
-        <ul id="activities">
-            <li class="teams"><span data-bind="team"></span>: Games won: <span data-bind="Win"></span> Games Lost: <span data-bind="Lost"></span></li>
-        </ul>
+        <section id="game">
+            <header>Game</header>
+        </section>
 
+        <section id="ranking">
+            <header>Ranking</header>
+        </section>
 
 
 	<!-- Libs -->
 	<script src="js/lib/routie.min.js"></script>
 	<script src="js/lib/ready.min.js" type="text/javascript"></script>
 	<script src="js/lib/transparency.min.js" type="text/javascript"></script>
+    <script src="js/lib/reqwest.min.js" type="text/javascript"></script>
+    <script src="js/lib/qwery.min.js" type="text/javascript"></script>
 
 	<!-- Application -->
     <script src="js/data.js"></script><!-- data in json formaat met scedule, score en game informatie -->
-    <script src="js/scoreApp.js"></script><!-- dé App met het skeleton -->
-
+    <script src="js/scoreApp.js"></script><!-- dé Web App met het skeleton -->
 
     </body>
 </html>
